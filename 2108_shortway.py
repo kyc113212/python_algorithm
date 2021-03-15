@@ -1,4 +1,5 @@
 from sys import stdin
+import openpyxl
 
 def main():
     N, M = map(int, stdin.readline().split())    #size 입력
