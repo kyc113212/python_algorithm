@@ -5,7 +5,7 @@ def main():
     N, M = map(int, stdin.readline().split())    #size 입력
     matrix = [stdin.readline().rstrip() for _ in range(N)]
     dist = [[0]*M for _ in range(N)]
-    visited = [[0]*M for _ in range(N)] #N*M행렬을 0으로 초기화
+    visited = [[0]*M for _ in range(N)] #N*M행렬을 0으로 초기화 -> 0으로 채워진 1개의 행을 N개의 열로 만든다.
     dx = [-1,1,0,0]
     dy = [0,0,-1,1]
 
